@@ -10,7 +10,7 @@ st.write("This is a regular text.")
 
 model = joblib.load('lin.pkl')
 
-X = st.slider('E',0,40)
-y = model.predict([[X]])
+X = st.slider('slider',0,40)
+y = model.predict([[-X]])
 
 st.write('salary is ',y)
